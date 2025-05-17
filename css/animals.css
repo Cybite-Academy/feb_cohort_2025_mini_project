@@ -1,0 +1,80 @@
+/*=== generic styles ===*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(235, 235, 235);
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+.header,
+.body {
+  padding: 2px 30px;
+}
+
+.toggle {
+  background-color: rgb(104, 104, 104);
+  height: 22px;
+  width: 36px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/*=== header styles ===*/
+.header {
+  display: flex;
+  background-color: rgb(196, 196, 196);
+  justify-content: space-between;
+}
+.header_toggle {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+.header_toggle div {
+  height: 16px;
+  width: 18px;
+  background-color: white;
+  border-radius: 12px;
+}
+.header_toggle--active:focus {
+  justify-content: right;
+  background-color: red;
+}
+
+/*=== body ===*/
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.body_toggle {
+  height: 28px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  border-radius: 18px;
+}
+.body_toggle div{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 18px;
+}
+.body_toggle--active:focus {
+    justify-content: right;
+    background-color: rgb(52, 139, 109);
+  }
