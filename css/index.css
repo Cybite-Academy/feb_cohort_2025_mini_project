@@ -1,79 +1,44 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  margin-top: 60px;
-}
-
-.container {
-  width: 90%;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  padding: 40px 16px 28px 16px;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  color: rgb(170, 170, 170);
-}
-.item {
-  height: 150px;
-  width: 200px;
-  background-color: rgb(235, 235, 235);
-  border-radius: 8px;
-  cursor: pointer;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  transition: all 1s ease-in-out;
+  height: 100vh;
+  padding-top: 4rem;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+.list {
+  width: 70%;
+  max-width: 300px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #333;
+}
+li {
+  background-color: #d1d1d1;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+a {
+  min-width: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
 }
 .icon {
-  font-size: 32px;
-  padding: 1rem;
-  color: inherit;
-}
-.day:hover {
-  border: 1px solid skyblue;
-  background-color: rgba(135, 207, 235, 0.15);
-}
-.sun:hover,
-.day:hover {
-  color: #ffc800;
-}
-.night:hover {
-  border: 1px solid rgb(108, 129, 146);
-  background-color: 1px solid rgb(0, 0, 0, 0.45);
-}
-.moon:hover,
-.night:hover {
-  color: black;
-}
-
-.day:focus,
-.night:focus {
-  height: 500px;
-  width: 500px;
-  flex-grow: 3;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.day:focus {
-  background-image: url(https://img.freepik.com/premium-vector/sunny-day-vector-park-beautiful-nature-background-illustration_1138841-7776.jpg);
-  color: #ffc800;
-  border: 3px solid skyblue;
-}
-.night:focus {
-  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/443/760/small_2x/forest-night-with-full-moon-and-stars-landscape-illustration-vector.jpg);
-  color: azure;
-  border: 3px solid rgb(108, 129, 146);
+  width: 18px;
 }
